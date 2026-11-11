@@ -1,0 +1,6 @@
+playwright
+python-pptx
+pymupdf
+mlx-whisper
+manim
+pytest

@@ -1,0 +1,26 @@
+# Allowlist: the project root doubles as a workspace full of lecture builds,
+# course PDFs and generated audio/video under arbitrary folder names. Ignore
+# everything at the root, then re-include only the project itself, so a new
+# lecture folder can never be committed by accident.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/requirements.txt
+!/pytest.ini
+!/sample_deck.pptx
+!/docs/
+!/src/
+!/tests/
+
+# Python and tool caches anywhere in the re-included folders
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
